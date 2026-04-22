@@ -13,5 +13,5 @@ class Jogo:
 
     @staticmethod
     def de_dict(dados):
-        # TODO: completar
+        # TODO: completar 
         pass
