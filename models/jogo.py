@@ -8,10 +8,16 @@ class Jogo:
         print(f"{self.nome} - {self.genero} ({self.ano})")
 
     def para_dict(self):
-        # TODO: completar
-        pass
+        return {
+            "nome": self.nome,
+            "genero": self.genero,
+            "ano": self.ano,
+        }
 
     @staticmethod
     def de_dict(dados):
-        # TODO: completar 
-        pass
+        return Jogo(
+            nome=dados["nome"],
+            genero=dados["genero"],
+            ano=dados["ano"]
+        )
